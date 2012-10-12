@@ -14,24 +14,25 @@ Testing the sample app
 
 1. Open the OpenTokHelloWorld.xcodeproj file in XCode.
 
-2. Connect your iOS device to a USB port on your Mac. Make sure that your device is connected to the internet.
-
-3. Select the XCode Organizer (Window > Organizer), and make sure that your device is provisioned to work with the sample app. For more information,
+2. Connect your iOS device to a USB port on your Mac. Make sure that your device is provisioned and connected to the internet. For more information,
 see the section on "Setting up your development environment" at [this page](https://developer.apple.com/programs/ios/gettingstarted/) at
 the Apple iOS Dev Center.
 
 	Note that the OpenTok iOS SDK does not support publishing streams in the XCode iOS Simulator.
 	To test OpenTok apps on an iOS device, you will need to register as an Apple iOS developer at
 	[http://developer.apple.com/programs/register/](http://developer.apple.com/programs/register/).
-	
-4. In the main XCode project window, click the Run button (or select Product > Run).
+
+3. Open `ViewController.h` and modify `kApiKey`, `kSessionId`, and `kToken` with your own apiKey, SessionId, and Token, respectively.  
+If you don't have an apiKey or secret, apply for one [here](http://www.tokbox.com/opentok/api/tools/js/apikey)  
+To generate your own sessionId or token, visit the [token generation page](http://www.tokbox.com/opentok/api/tools/generator)  
+
+4. In the main XCode project window, click the Run button (or select Product > Run). Make sure your device name is selected
 
 	The app should start on your connected device. Once the app connects to the OpenTok session, it publishes an audio-video stream, which is displayed onscreen. Then, the audio-video stream shows up as a subscribed stream (along with any other streams currently in the session).
 
 5. Close the app. Now set up the app to subscribe to audio-video streams other than your own:
 
-	- In XCode, near the top of the ViewController.m file, change the `subscribeToSelf` property to be set to `NO`:
-	
+	- In XCode, near the top of the ViewController.m file, change the `subscribeToSelf` property to be set to `NO`:  
 			static bool subscribeToSelf = NO;
 	- Run the app on your iOS device again.
 	- In a browser on your Mac, load the browser_demo.html file, included with the sample app, to add more streams to the session. 
@@ -39,9 +40,7 @@ the Apple iOS Dev Center.
 	*Note:* If the web page asks you to set the Flash Player Settings, or if you do not see a display of your camera in the page, see the
 	instructions in ["Flash Player Settings for local testing"](http://www.tokbox.com/opentok/api/tools/js/tutorials/helloworld.html#localTest).
 
-6. You can generate a unique session ID at this URL:
-
-	[http://staging.tokbox.com/hl/session/create](http://staging.tokbox.com/hl/session/create)
+6. You can generate sessionId's dynamically by setting HTTP requests to our [REST API](http://www.tokbox.com/opentok/api/tools/documentation/api/rest_api.html)
 
 	Using a unique session ID prevents other test developers from seeing your published streams (and it keeps their streams out of your session). 
 	In the ViewController.m file, change the `kSessionId` constant in the ViewController.m file to the new session ID. Also change the value of the 
