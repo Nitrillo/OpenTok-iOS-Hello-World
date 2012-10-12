@@ -32,13 +32,13 @@ To generate your own sessionId or token, visit the [token generation page](http:
 
 5. Close the app. Now set up the app to subscribe to audio-video streams other than your own:
 
-	- In XCode, near the top of the ViewController.m file, change the `subscribeToSelf` property to be set to `NO`:  
+  - In XCode, near the top of the ViewController.m file, change the `subscribeToSelf` property to be set to `NO`:  
 			static bool subscribeToSelf = NO;
-	- Run the app on your iOS device again.
-	- In a browser on your Mac, load the browser_demo.html file, included with the sample app, to add more streams to the session. 
-	In the web page, click the Connect and Publish buttons.
-	*Note:* If the web page asks you to set the Flash Player Settings, or if you do not see a display of your camera in the page, see the
-	instructions in ["Flash Player Settings for local testing"](http://www.tokbox.com/opentok/api/tools/js/tutorials/helloworld.html#localTest).
+  - Run the app on your iOS device again.
+  - In a browser on your Mac, load the browser_demo.html file, included with the sample app, to add more streams to the session. 
+  In the web page, click the Connect and Publish buttons.  
+  *Note:* If the web page asks you to set the Flash Player Settings, or if you do not see a display of your camera in the page, see the
+instructions in [Flash Player Settings for local testing](http://www.tokbox.com/opentok/api/tools/js/tutorials/helloworld.html#localTest).
 
 6. You can generate sessionId's dynamically by setting HTTP requests to our [REST API](http://www.tokbox.com/opentok/api/tools/documentation/api/rest_api.html)
 
