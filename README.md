@@ -31,13 +31,12 @@ To generate your own sessionId or token, visit the [token generation page](http:
 	The app should start on your connected device. Once the app connects to the OpenTok session, it publishes an audio-video stream, which is displayed onscreen. Then, the audio-video stream shows up as a subscribed stream (along with any other streams currently in the session).
 
 5. Close the app. Now set up the app to subscribe to audio-video streams other than your own:
-
   - In XCode, near the top of the ViewController.m file, change the `subscribeToSelf` property to be set to `NO`:  
-			static bool subscribeToSelf = NO;
+			`static bool subscribeToSelf = NO;`
   - Run the app on your iOS device again.
   - In a browser on your Mac, load the browser_demo.html file, included with the sample app, to add more streams to the session. 
-  In the web page, click the Connect and Publish buttons.  
-  *Note:* If the web page asks you to set the Flash Player Settings, or if you do not see a display of your camera in the page, see the
+  - In the web page, click the Connect and Publish buttons.  
+  **Note:** If the web page asks you to set the Flash Player Settings, or if you do not see a display of your camera in the page, see the
 instructions in [Flash Player Settings for local testing](http://www.tokbox.com/opentok/api/tools/js/tutorials/helloworld.html#localTest).
 
 6. You can generate sessionId's dynamically by setting HTTP requests to our [REST API](http://www.tokbox.com/opentok/api/tools/documentation/api/rest_api.html)
@@ -204,4 +203,5 @@ the `session: didFailWithError:` message:
 The [OpenTokBasic sample app](https://github.com/opentok/OpenTok-iOS-Basic-Tutorial) uses more features of the OpenTok iOS SDK than the OpenTokHello app does.
 
 For details on the full OpenTok iOS API, see the [reference documentation](http://www.tokbox.com/opentok/ios/docs/index.html).
+
 
