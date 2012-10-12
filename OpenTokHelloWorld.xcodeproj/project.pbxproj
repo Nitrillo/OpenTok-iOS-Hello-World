@@ -342,6 +342,7 @@
 				INFOPLIST_FILE = "OpenTokHelloWorld/OpenTokHelloWorld-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = OpenTokHello;
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -358,6 +359,7 @@
 				INFOPLIST_FILE = "OpenTokHelloWorld/OpenTokHelloWorld-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = OpenTokHello;
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
