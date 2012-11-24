@@ -1,14 +1,18 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<title>OpenTok Hello World</title>
-	<script src="http://staging.tokbox.com/v0.91/js/TB.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src='http://static.opentok.com/v1.1/js/TB.min.js'></script>
 	<script type="text/javascript" charset="utf-8">
-		var apiKey = 1127; // OpenTok sample API key. Replace with your own API key.
-		var sessionId = '1sdemo00855f8290f8efa648d9347d718f7e06fd';
-								// Replace with your session ID. See http://staging.tokbox.com:4000/hl/session/create
-		var token = 'devtoken'; // Should not be hard-coded in production versions of apps.
-								// Add to the page using the OpenTok server-side libraries.
+
+		// *** Fill the following variables using your own Project info from the Dashboard  ***
+		// ***                  (https://dashboard.tokbox.com/projects)                     ***
+
+		var apiKey = ''; // Replace with your own API key.
+		var sessionId = ''; // Replace with your generated Session ID.
+		var token = ''; // Replace with your generated Token (use Project Tools or from a server-side library)
+
 		var session;
 		var publisher;
 		var subscribers = {};
