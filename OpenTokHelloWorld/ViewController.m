@@ -16,12 +16,11 @@
 static double widgetHeight = 240;
 static double widgetWidth = 320;
 
-#import "token.h"
-// You will need to make your own session IDs and tokens in your app.
-// For a unique API key, go to http://www.tokbox.com/opentok/api/documentation/gettingstarted#getAPIKey
-static NSString* const kApiKey = @"11421872";
-static NSString* const kToken = kOpenTokHelloWorldToken;
-static NSString* const kSessionId = @"2_MX4xMTQyMTg3Mn43Mi41LjE2Ny4xMzR-VHVlIEF1ZyAyOCAxNDo1Njo0MiBQRFQgMjAxMn4wLjk3MjIxMTV-";
+// *** Fill the following variables using your own Project info from the Dashboard  ***
+// ***                  (https://dashboard.tokbox.com/projects)                     ***
+static NSString* const kApiKey = @"";    // Replace with your API Key
+static NSString* const kSessionId = @""; // Replace with your generated Session ID
+static NSString* const kToken = @"";     // Replace with your generated Token (use Project Tools or from a server-side library)
 
 static bool subscribeToSelf = YES; // Change to NO if you want to subscribe to streams other than your own.
 
