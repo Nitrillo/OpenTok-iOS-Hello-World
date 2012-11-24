@@ -22,7 +22,7 @@ static NSString* const kApiKey = @"";    // Replace with your API Key
 static NSString* const kSessionId = @""; // Replace with your generated Session ID
 static NSString* const kToken = @"";     // Replace with your generated Token (use Project Tools or from a server-side library)
 
-static bool subscribeToSelf = YES; // Change to NO if you want to subscribe to streams other than your own.
+static bool subscribeToSelf = NO; // Change to YES if you want to subscribe to your own stream.
 
 #pragma mark - View lifecycle
 
