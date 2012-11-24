@@ -24,10 +24,15 @@ Testing the sample app
     on an iOS device, you will need to register as an Apple iOS developer at
     [http://developer.apple.com/programs/register/](http://developer.apple.com/programs/register/).
 
-3.  Open `ViewController.h` and modify `kApiKey`, `kSessionId`, and `kToken` with your own API Key, Session ID, and Token,
-    respectively. If you don't have an API Key [sign up for a Developer Account](https://dashboard.tokbox.com/signups/new).
-    Then to generate the Session ID and Token, use the Project Tools on the
-    [Project Details](https://dashboard.tokbox.com/projects) page.
+3.  Configure the project to use your API Key, your own Session, and a Token to access it.  If you don't have an 
+    API Key [sign up for a Developer Account](https://dashboard.tokbox.com/signups/new). Then to generate the Session ID
+    and Token, use the Project Tools on the [Project Details](https://dashboard.tokbox.com/projects) page.
+
+    Open `ViewController.h` and modify `kApiKey`, `kSessionId`, and `kToken` with your own API Key, Session ID, and Token,
+    respectively. 
+
+    Edit `browser_demo.html` and modify the variables `apiKey`, `sessionId`, and `token` with your own API Key, Session ID,
+    and Token, respectively.
 
 4.  Make sure your attached iOS device is selected in the Scheme chooser. Run the App (press the play button).
 
@@ -39,7 +44,7 @@ Testing the sample app
     -   Near the top of the `ViewController.m` file, change the `subscribeToSelf` property to be set to `NO`
     -   Run the app on your iOS device again.
     -   In a browser on your Mac, load the `browser_demo.html` file, included with the sample app, to add more streams to
-        the session. TODO: Instructions to replace API Key and Token in the file.
+        the session.
     -   In the web page, click the Connect and Publish buttons.
 
         ***Note:*** If the web page asks you to set the Flash Player Settings, or if you do not see a display of your camera in
