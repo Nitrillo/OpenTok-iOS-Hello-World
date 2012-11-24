@@ -1,4 +1,4 @@
-The OpenTokHello sample app
+The OpenTokHello Sample App
 ===========================
 
 The OpenTokHello sample app is a basic sample app that shows the most basic features of the OpenTok iOS SDK.
