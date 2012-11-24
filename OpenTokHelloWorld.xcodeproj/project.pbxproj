@@ -173,7 +173,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FE24FD814F71E47002929E6 /* Build configuration list for PBXNativeTarget "OpenTokHelloWorld" */;
 			buildPhases = (
-				D491B8FF15EE93FA00C3307C /* ShellScript */,
 				1FE24FB314F71E47002929E6 /* Sources */,
 				1FE24FB414F71E47002929E6 /* Frameworks */,
 				1FE24FB514F71E47002929E6 /* Resources */,
@@ -225,22 +224,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		D491B8FF15EE93FA00C3307C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export PYTHONPATH=${SRCROOT}/Opentok-Python-SDK\nOPENTOKTOKEN=`python ${SRCROOT}/OpenTokHelloWorld/generate_token.py`\necho \"#define kOpenTokHelloWorldToken @\\\"${OPENTOKTOKEN}\\\"\" > ${SRCROOT}/OpenTokHelloWorld/token.h";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1FE24FB314F71E47002929E6 /* Sources */ = {
