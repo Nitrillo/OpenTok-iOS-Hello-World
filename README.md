@@ -9,7 +9,8 @@ Once the app connects to the OpenTok session, it publishes an audio-video stream
 Then, the same audio-video stream shows up as a subscribed stream (along with any other streams currently in the
 session).
 
-Before you test the sample app, be sure to read [Using the OpenTok iOS SDK](http://www.tokbox.com/opentok/ios/docs/docs/Using_iOS.html).
+Before you test the sample app, be sure to read the README file for
+[the OpenTok on WebRTC iOS SDK](https://github.com/opentok/opentok-ios-sdk-webrtc/).
 
 Testing the sample app
 ----------------------
@@ -47,9 +48,6 @@ Testing the sample app
         the session.
     -   In the web page, click the Connect and Publish buttons.
 
-        ***Note:*** If the web page asks you to set the Flash Player Settings, or if you do not see a display of your camera in
-        the page, see the instructions in
-        [Flash Player Settings for local testing](http://www.tokbox.com/opentok/api/tools/js/tutorials/helloworld.html#localTest).
 
 Understanding the code
 ----------------------
@@ -74,7 +72,7 @@ When the view initially loads, the app allocates an OTSession object and sends i
 
 The `kSessionId` constant is the session ID string for the OpenTok session your app connects to. This can be generated from
 the [Developer Dashboard](https://dashboard.tokbox.com/projects) or from a
-[server-side library](http://www.tokbox.com/opentok/api/tools/documentation/api/server_side_libraries.html).
+[server-side library](http://www.tokbox.com/opentok/docs/concepts/server_side_libraries.html).
 
 The `doConnect` method sends the [OTSession connectWithApiKey:token:] to the the `_session` object:
 
@@ -85,7 +83,7 @@ The `doConnect` method sends the [OTSession connectWithApiKey:token:] to the the
 }
 ```
 
-The `kToken` constant is the token constant for the client connecting to the session. See [Connection Token Creation](http://www.tokbox.com/opentok/api/tools/js/documentation/overview/token_creation.html) for details.
+The `kToken` constant is the token constant for the client connecting to the session. See [Connection Token Creation](http://www.tokbox.com/opentok/docs/concepts/token_creation.html) for details.
 
 When the app connects to the OpenTok session, the OTSessionDelegate (which is the ViewController instance) is sent the
 `sessionDidConnect:` message:
@@ -238,5 +236,5 @@ the `session:didFailWithError:` message:
 The [OpenTokBasic sample app](https://github.com/opentok/OpenTok-iOS-Basic-Tutorial) uses more features of the OpenTok
 iOS SDK than the OpenTokHello app does.
 
-For details on the full OpenTok iOS API, see the [reference documentation](http://www.tokbox.com/opentok/ios/docs/index.html).
+For details on the full OpenTok on WebRTC iOS API, see the [reference documentation](http://www.tokbox.com/opentok/webrtc/docs/ios/reference/index.html).
 
